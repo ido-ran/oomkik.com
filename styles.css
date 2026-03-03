@@ -125,6 +125,28 @@ h3 {
 .button:hover {
   background: #333;
   transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.button-accent {
+  background: var(--accent-color);
+  box-shadow: 0 15px 30px rgba(0, 122, 255, 0.3);
+}
+
+.button-accent:hover {
+  background: #0062cc;
+  box-shadow: 0 20px 40px rgba(0, 122, 255, 0.4);
+}
+
+.button-outline {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.button-outline:hover {
+  background: var(--primary-color);
+  color: white;
 }
 
 /* Sections */
@@ -188,6 +210,62 @@ h3 {
 
 .footer a:hover {
   color: var(--primary-color);
+}
+
+/* Alpha Testing Page */
+.testing-steps {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.step-card {
+  background: var(--section-bg);
+  padding: 30px;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  transition: var(--transition);
+}
+
+.step-card:hover {
+  transform: translateX(10px);
+  background: #eeeef0;
+}
+
+.step-number {
+  background: var(--primary-color);
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.step-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.step-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.step-content a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.step-content a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive */
